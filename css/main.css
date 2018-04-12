@@ -1,0 +1,32 @@
+.wrapper{
+    text-align: center;
+}
+
+.myDiv {
+}
+#title {
+    position: relative;
+    z-index: 1;
+    top:50px;
+    color:#fff;
+    
+}
+.space  {
+    width:100%;
+    min-height:80%;
+    position: relative;
+    top:-200px;
+}
+input {
+    position: relative;
+    z-index: 2;
+    top:80px;
+    border-radius:5px;
+}
+button {
+    position: relative;
+    z-index: 3;
+    top:130px;
+    right:120px;
+}
+
