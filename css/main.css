@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'moon';
+    src:url('../fonts/moon-runner/moonrunner3dital.ttf');
+}
 .wrapper{
     margin:0 auto;
     text-align: center;
@@ -5,6 +9,8 @@
 
 
 #title {
+    font-family:'moon';
+    font-size:65px;
     position: relative;
     z-index: 1;
     top:-750px;
@@ -22,20 +28,21 @@ input {
     z-index: 2;
     top:-700px;
     left:20px;
-    width:20%;
+    width:200px;
     border-radius:5px;
 }
 button {
     position: relative;
     z-index: 3;
     top:-650px;
-    right:140px;
+    right:110px;
     border-radius:5px;
     background-color:green;
 }
 #newSign {
     position: relative;
     top:-650px;
+    right:10px;
     color:#fff;
     font-size:45px;
 }
@@ -48,7 +55,7 @@ button {
 }
 #yourInfo {
     position: relative;
-    top:-500px;
+    top:-600px;
     color:#fff;
     font-size:45px;
 }
@@ -58,14 +65,35 @@ button {
         width:950px;
         height:700px;
     }
+    #title {
+        position: relative;
+        top:-650px;
+    }
+    input {
+        position: relative;
+        top:-600px;
+    }
+    button {
+        position: relative;
+        top:-550px;
+    }
+    #newSign {
+        position: relative;
+        top:-550px;
+    }
+    #img {
+        position: relative;
+        top:-550px;
+    }
+    #yourInfo {
+        position: relative;
+        top:-500px;
+    }
 }
 @media only screen and (max-width:600px) {
     .space {
         width:600px;
         height:1500px;
     }
-    #title {
-        position: relative;
-        top:-550px;
-    }
+    
 }
