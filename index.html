@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Zodiac</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel='stylesheet' href='css/animate.css'/>
         <link rel='stylesheet' href='css/main.css'/>
@@ -11,19 +12,23 @@
 <body>
 <div class='wrapper'>
  
-
+    <div class='spaceSpin'>
+        <div class='space'></div>
+    </div>
     <div class='myDiv'>
-          <img class='space animated bounce' src='images/space.jpg'/> 
-        <h1 id='title'>What is your Zodiac sign?</h1>
-        
-        <input id='userdata' placeholder='Type your Horoscope'>
-        <button class='' onclick='getZodiac()'>Click!</button>
-        
             
+       <div class='text'>
+           
+            <h1 id='title'>What is your Zodiac sign?</h1>
+        
+           <input id='userdata' placeholder='Type your Horoscope'>
+            <button class='' onclick='getZodiac()'>Click!</button>
+        
             <p id='newSign'></p>
             <img src='' id='img'>
             <p id='yourInfo'></p>
 
+        </div> 
     </div>
         
 </div>

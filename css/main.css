@@ -2,46 +2,81 @@
     font-family:'moon';
     src:url('../fonts/moon-runner/moonrunner3dital.ttf');
 }
-.wrapper{
-    margin:0 auto;
-    text-align: center;
+html {
+    overflow:hidden;
+    height:auto;
+}
+body {
+    background-color:#111;
+    height:auto;
+}
+
+.myDiv{
+        text-align: center;
+
 }
 
 
 #title {
     font-family:'moon';
     font-size:65px;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top:-750px;
-    color:#fff;
+    color:orange;
+    top:50px;
+    
     
 }
+.spaceSpin {
+    position: absolute;
+    top:100px;
+    transform:translate(-50%, -50%);
+}
 .space  {
-    width:1500px;
-    height:800px;
-    position: relative;
+    width:500vw;
+    height:500vh;
+    margin-top:-200vh;
+    margin-left:-200vw;
+    top:50%;
+    left:50%;
+    background-size:240px;
+    backface-visibility: visible;
+    position: absolute;
+    z-index: -1;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);
+    animation:spin 240s linear infinite;
     
+}
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
 input {
     position: relative;
     z-index: 2;
-    top:-700px;
+    top:150px;
     left:20px;
     width:200px;
     border-radius:5px;
 }
 button {
+    font-family:'moon';
+    font-size:30px;
     position: relative;
     z-index: 3;
-    top:-650px;
+    top:200px;
     right:110px;
     border-radius:5px;
+    color:#fff;
+    cursor:pointer;
     background-color:green;
 }
 #newSign {
     position: relative;
-    top:-650px;
     right:10px;
     color:#fff;
     font-size:45px;
@@ -50,50 +85,12 @@ button {
 #img {
     width:200px;
     position: relative;
-    top:-650px;
     background-color:white;
 }
 #yourInfo {
     position: relative;
-    top:-600px;
     color:#fff;
     font-size:45px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .space {
-        width:950px;
-        height:700px;
-    }
-    #title {
-        position: relative;
-        top:-650px;
-    }
-    input {
-        position: relative;
-        top:-600px;
-    }
-    button {
-        position: relative;
-        top:-550px;
-    }
-    #newSign {
-        position: relative;
-        top:-550px;
-    }
-    #img {
-        position: relative;
-        top:-550px;
-    }
-    #yourInfo {
-        position: relative;
-        top:-500px;
-    }
-}
-@media only screen and (max-width:600px) {
-    .space {
-        width:600px;
-        height:1500px;
-    }
-    
-}
+

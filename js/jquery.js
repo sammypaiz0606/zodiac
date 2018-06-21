@@ -63,7 +63,7 @@ function getZodiac() {
         document.getElementById('newSign').textContent = input;
         document.getElementById('img').src = zodiac[i].image;
         document.getElementById('yourInfo').textContent = zodiac[i].info;
-        document.getElementById('img').classList.add('animated', 'slideInLeft');
+        
        
         return;
       } else {
